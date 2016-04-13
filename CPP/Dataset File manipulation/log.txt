@@ -1,0 +1,11 @@
+Auto & Transport	 $30
+Bills & Utilities	 $76.01
+Education	 $35000
+Entertainment	 $168.77
+Health & Fitness	 $85
+MISC	 $50
+Personal Care	 $150
+Shopping	 $57.26
+Savings	 $34.34
+House & Feeding	 $52.35
+Non-categorized expends	 $15.67

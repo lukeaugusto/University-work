@@ -1,0 +1,45 @@
+Auto & Transport
+	Gas & Fuel
+	Auto Payment
+	Auto Insurance
+Bills & Utilities
+	Television
+	Home Phone
+	Utilities
+Education
+	Tuition
+	Student Loan
+	Textbooks
+	School Supplies
+Entertainment
+	Arts
+	Music
+	Movies
+	Alchohol & Bar
+Health & Fitness
+	Doctor
+	Eyecare
+	Health Insurance
+	Sports
+MISC
+	Cash
+	Check
+	ATM
+	ATM Fee
+Personal Care
+	Laundry
+	Hair
+	Health Spa
+Shopping
+	Clothing
+	Books
+	Electronics
+	Hobbies
+	Magazines
+Savings
+	Saving account
+	Coin vault
+House & Feeding
+	Grocery
+	Fast Food
+	Restaurant

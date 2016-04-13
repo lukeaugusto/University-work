@@ -1,0 +1,19 @@
+3/6/2016	Gas & Fuel	30
+3/7/2016	Home Phone	25.24
+3/8/2016	Arts	150.02
+3/19/2016	Tuition	35000
+3/19/2016	Fast Food	15.67
+3/19/2016	Games	15.67
+3/19/2016	Sports	25
+3/26/2016	Cash	30
+3/26/2016	Sports	30
+3/26/2016	Restaurant	32.18
+3/27/2016	Alchohol & Bar	18.75
+3/28/2016	Magazines	6.67
+3/29/2016	ATM Fee	20
+3/29/2016	Hair	150
+3/30/2016	Coin vault	34.34
+3/30/2016	Home Phone	50.77
+3/30/2016	Doctor	30
+3/31/2016	Electronics	50.59
+3/31/2016	Grocery	4.5
