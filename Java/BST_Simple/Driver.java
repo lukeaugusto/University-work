@@ -11,6 +11,8 @@ public class Driver {
 		// Create and populate the BST
 		BST = new NodeType[n];
 		
+        
+        // Bad hardcoded program, the focus here is to test the bst
 		BST[7] = new NodeType(7);
 		BST[4] = new NodeType(4);
 		BST[3] = new NodeType(3);

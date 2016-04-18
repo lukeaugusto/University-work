@@ -1,6 +1,6 @@
 ## Synopsis
 
-BellmanFord Algorithmn implemented in a simulation of Arbitrage of Currencies.
+Hardcoded Binary Search Tree, I know it is painfull, but it was just to train the BST implementation.
 
 ## Motivation
 

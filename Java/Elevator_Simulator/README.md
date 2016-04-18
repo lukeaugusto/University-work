@@ -1,6 +1,7 @@
 ## Synopsis
 
-BellmanFord Algorithmn implemented in a simulation of Arbitrage of Currencies.
+Final Project of Algorithmns and Data Structures.
+A document explaining all the development process is in the src folder.
 
 ## Motivation
 

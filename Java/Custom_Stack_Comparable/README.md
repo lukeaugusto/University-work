@@ -1,6 +1,7 @@
 ## Synopsis
 
-BellmanFord Algorithmn implemented in a simulation of Arbitrage of Currencies.
+Custom Stack Implementation, with the purpose to train <Comparable> classes.
+The program simulates the foward, back and backMostTimeSpent button in a web browser.
 
 ## Motivation
 

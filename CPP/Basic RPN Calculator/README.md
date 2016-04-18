@@ -1,5 +1,3 @@
-Author: Lucas A Santos
-
 ## Synopsis
 
 Project: Project 6 - Baby Name Popularity Finder
@@ -7,7 +5,7 @@ Manipulation of strings and files.
 
 ## Motivation
 
-Course: CSE 2050 - Program in a Second Language, Spring 2016
+Course: CSE 2050 - Program in a Second Language, Spring 2016, Florida Institute of Technology
 
 ## Installation
 

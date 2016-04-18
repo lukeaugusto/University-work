@@ -1,5 +1,3 @@
-Author: Lucas A Santos
-
 ## Synopsis
 
 Project: Midterm Project - RPN Calculator
@@ -7,18 +5,13 @@ For this assignment, you will design, develop, and test a program that simulates
 
 ## Motivation
 
-Course: CSE 2050 - Program in a Second Language, Spring 2016
+Course: CSE 2050 - Program in a Second Language, Spring 2016, Florida Institute of Technology
 
 ## Installation
 
 Source codes of a C++ Project. 
     Import the .cpp files in the src folder.
     Compile and run.
-
-## Tests
-
-A print of the usage is in the root folder
-
 
 ## Algorithmn
 
