@@ -1,9 +1,11 @@
 ## Synopsis
 
-These programs are some codes I have worked so far in the university
+These programs are some codes I have worked so far in the university.
 
-University of California - Berkeley
-Florida Institute of Technology
+University of California - Berkeley.
+
+Florida Institute of Technology. 
+
 Federal University of São Carlos.
 
 ## Motivation
