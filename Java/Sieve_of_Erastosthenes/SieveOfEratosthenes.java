@@ -1,9 +1,3 @@
-/*
- * Author:  Guilherme Pereira Gribeler, gpereiragrib2015@my.fit.edu
- * Course:  CSE 2010, Section 02, Fall 2015
- * Project: Lab1, Primes
- */
-
 import java.util.ArrayList;
 import java.util.Arrays;
 

@@ -18,8 +18,8 @@ import java.util.regex.Pattern;
 public class GUI extends JFrame{
 	private static final long serialVersionUID = 1L;
 
-	private JLabel inputLabel, firstOutputLabel, secondOutputLabel, thirdOutputLabel, fourthOutputLabel;
-	private JTextField inputTF, firstOutputTF, secondOutputTF, thirdOutputTF, fourthOutputTF;
+	private JLabel inputLabel, firstOutputLabel, secondOutputLabel, thirdOutputLabel, fourthOutputLabel, fifthOutputLabel;
+	private JTextField inputTF, firstOutputTF, secondOutputTF, thirdOutputTF, fourthOutputTF, fifthOutputTF;
 	private JPanel panel;
 	private JButton runB, exitB;
 	private RunButtonHandler runHandler;
@@ -46,6 +46,8 @@ public class GUI extends JFrame{
 		fourthOutputLabel = new JLabel("Fourth output file: ");
 		fourthOutputTF = new JTextField();
 		
+		fifthOutputLabel = new JLabel("Fifth output file: ");
+		fifthOutputTF = new JTextField();
 		
 		panel = new JPanel();
 		
@@ -71,11 +73,13 @@ public class GUI extends JFrame{
 		panel.add(thirdOutputTF);
 		panel.add(fourthOutputLabel);
 		panel.add(fourthOutputTF);
+		panel.add(fifthOutputLabel);
+		panel.add(fifthOutputTF);
 		panel.add(runB);
 		panel.add(exitB);
 		
 		// Configure the panel
-		panel.setLayout(new GridLayout(6, 2));
+		panel.setLayout(new GridLayout(7, 2));
 		setTitle("Files, Strings and GUI assignment");
 		
 		// Configure the frame
@@ -89,7 +93,7 @@ public class GUI extends JFrame{
 		
 		private Scanner input;
 		private File temp;
-		private Formatter output, output2, output3, output4;
+		private Formatter output, output2, output3, output4, output5;
 		
 		// Check if a string contains line
 		private boolean validString(String line, String regex){
@@ -126,7 +130,8 @@ public class GUI extends JFrame{
 				firstOutputTF.getText().trim().length() != 0 && 
 				secondOutputTF.getText().trim().length() != 0 && 
 				thirdOutputTF.getText().trim().length() != 0 && 
-				fourthOutputTF.getText().trim().length() != 0
+				fourthOutputTF.getText().trim().length() != 0 &&
+				fifthOutputTF.getText().trim().length() != 0
 				){
 				
 				// Open the input file
@@ -150,7 +155,8 @@ public class GUI extends JFrame{
 				StringBuilder result = new StringBuilder();
 				StringBuilder result2 = new StringBuilder();	
 				StringBuilder result3 = new StringBuilder();	
-				StringBuilder result4 = new StringBuilder();				
+				StringBuilder result4 = new StringBuilder();	
+				StringBuilder result5 = new StringBuilder();				
 				
 				while(input.hasNextLine()){
 					line = input.nextLine();
@@ -247,12 +253,37 @@ public class GUI extends JFrame{
 				result4.append("MEAN = " + new DecimalFormat("#0.0000").format(mean) + "\n");
 				result4.append("STANDARD DEVIATION = " + new DecimalFormat("#0.0000").format(stdDeviation) + "\n");
 				
+				// Create the content of the fifth file
+				// Set the appearance of the numbers to 0
+				int appearance[] = new int[100];
+				int qtdNumbers = 0;
+				for(int qtd : appearance){
+					qtd = 0;
+				}
+				
+				// Iterate over the array and count the appearance of the numbers.
+				for(i=0; i<baseNumbers.size(); i++){
+					for(Integer number : baseNumbers.get(i)){
+						appearance[number]++;
+						qtdNumbers++;
+					}
+				}
+				
+				// Convert the appearance count to percentage and create the result5 string
+				for(i=0; i<appearance.length; i++){
+					if(appearance[i]>0){
+						float percentage = ((float)appearance[i] / qtdNumbers) * 100;
+						result5.append(i + "\t" + new DecimalFormat("#0.00").format(percentage) + "\n");
+					}
+				}
+				
 				// Create the output files
 				try{
 					output = new Formatter(Paths.get(firstOutputTF.getText().trim()).toString());
 					output2 = new Formatter(Paths.get(secondOutputTF.getText().trim()).toString());
 					output3 = new Formatter(Paths.get(thirdOutputTF.getText().trim()).toString());
 					output4 = new Formatter(Paths.get(fourthOutputTF.getText().trim()).toString());
+					output5 = new Formatter(Paths.get(fifthOutputTF.getText().trim()).toString());
 				}catch(SecurityException securityException){
 					JOptionPane.showMessageDialog(null,"Write permission denied. Terminating.", "Error", JOptionPane.PLAIN_MESSAGE);
 					System.exit(1);
@@ -266,6 +297,7 @@ public class GUI extends JFrame{
 				output2.format("%s", result2.toString());
 				output3.format("%s", result3.toString());
 				output4.format("%s", result4.toString());
+				output5.format("%s", result5.toString());
 				
 				// Close the files
 				input.close();
@@ -273,6 +305,7 @@ public class GUI extends JFrame{
 				output2.close();
 				output3.close();
 				output4.close();
+				output5.close();
 				
 				// Show the success message and terminate
 				JOptionPane.showMessageDialog(null, "Power Ball data processing completed", "Error", JOptionPane.PLAIN_MESSAGE);
